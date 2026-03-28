@@ -1,0 +1,21 @@
+{
+  "name": "sample-monorepo",
+  "private": true,
+  "workspaces": [
+    "app",
+    "admin",
+    "ui",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev -w app",
+    "dev:admin": "npm run dev -w admin",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w app && npm run build -w admin",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.0"
+  }
+}
