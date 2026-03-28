@@ -1,0 +1,25 @@
+# Default — catches everything not matched below
+*                           @org/core-team
+
+# Frontend apps
+/app/                       @org/frontend-team
+/admin/                     @org/frontend-team
+
+# Shared UI component library
+/ui/                        @org/frontend-team @org/design-system
+
+# Backend
+/backend/                   @org/backend-team
+
+# Shared packages
+/packages/types/            @org/core-team
+/packages/tailwind-config/  @org/frontend-team @org/design-system
+
+# CI/CD
+/.github/                   @org/devops-team
+
+# Root config files (CI, TS, ESLint, workspaces)
+/package.json               @org/core-team
+/tsconfig.base.json         @org/core-team
+/eslint.config.js           @org/core-team
+
