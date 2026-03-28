@@ -10,7 +10,4 @@
     "noEmit": false
   },
   "include": ["src"],
-  "references": [
-    { "path": "../packages/types" }
-  ]
 }

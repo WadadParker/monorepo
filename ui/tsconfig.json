@@ -4,10 +4,7 @@
     "composite": true,
     "outDir": "dist",
     "rootDir": "src",
-    "noEmit": true
+    "emitDeclarationOnly": true
   },
-  "include": ["src"],
-  "references": [
-    { "path": "../packages/types" }
-  ]
+  "include": ["src"]
 }
